@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "000001",
+    "titulo": "Elden Ring",
+    "genero": ["RPG", "Acción", "Mundo Abierto"],
+    "fecha_lanzamiento": "2022-02-25T00:00:00Z",
+    "desarrolladora": "FromSoftware",
+    "precio": 59.99,
+    "disponible": true,
+    "plataformas": ["PC", "PS5", "Xbox Series X"],
+    "valoracion_media": 9.5,
+    "opiniones": [
+      {
+        "usuario": "gamer123",
+        "comentario": "Excelente jugabilidad y diseño de mundo.",
+        "puntuacion": 10,
+        "fecha": "2022-03-01T12:00:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core i5-8400",
+        "ram": "12 GB",
+        "gpu": "NVIDIA GTX 1060"
+      }
+    }
+  },
+  {
+    "_id": "000002",
+    "titulo": "Minecraft",
+    "genero": ["Sandbox", "Supervivencia", "Creativo"],
+    "fecha_lanzamiento": "2011-11-18T00:00:00Z",
+    "desarrolladora": "Mojang",
+    "precio": 26.95,
+    "disponible": true,
+    "plataformas": ["PC", "PS4", "Xbox One", "Switch"],
+    "valoracion_media": 8.9,
+    "opiniones": [
+      {
+        "usuario": "builderkid",
+        "comentario": "Me encanta construir y explorar.",
+        "puntuacion": 9,
+        "fecha": "2021-12-10T10:00:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core i3-3210",
+        "ram": "4 GB",
+        "gpu": "Intel HD Graphics 4000"
+      }
+    }
+  },
+  {
+    "_id": "000003",
+    "titulo": "The Witcher 3: Wild Hunt",
+    "genero": ["RPG", "Aventura"],
+    "fecha_lanzamiento": "2015-05-19T00:00:00Z",
+    "desarrolladora": "CD Projekt RED",
+    "precio": 39.99,
+    "disponible": false,
+    "plataformas": ["PC", "PS4", "Xbox One"],
+    "valoracion_media": 9.7,
+    "opiniones": [
+      {
+        "usuario": "witcherfan",
+        "comentario": "Historia impresionante y mundo abierto muy profundo.",
+        "puntuacion": 10,
+        "fecha": "2016-06-15T14:45:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core i5-2500K",
+        "ram": "6 GB",
+        "gpu": "NVIDIA GTX 660"
+      }
+    }
+  },
+  {
+    "_id": "000004",
+    "titulo": "God of War (2018)",
+    "genero": ["Acción", "Aventura"],
+    "fecha_lanzamiento": "2018-04-20T00:00:00Z",
+    "desarrolladora": "Santa Monica Studio",
+    "precio": 49.99,
+    "disponible": true,
+    "plataformas": ["PS4", "PC"],
+    "valoracion_media": 9.8,
+    "opiniones": [
+      {
+        "usuario": "kratosfan",
+        "comentario": "Una obra maestra moderna.",
+        "puntuacion": 10,
+        "fecha": "2020-08-10T10:10:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core i5-2500K",
+        "ram": "8 GB",
+        "gpu": "NVIDIA GTX 960"
+      }
+    }
+  },
+  {
+    "_id": "000005",
+    "titulo": "Cyberpunk 2077",
+    "genero": ["RPG", "Futurista", "Acción"],
+    "fecha_lanzamiento": "2020-12-10T00:00:00Z",
+    "desarrolladora": "CD Projekt RED",
+    "precio": 49.99,
+    "disponible": true,
+    "plataformas": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "valoracion_media": 7.5,
+    "opiniones": [
+      {
+        "usuario": "techlover",
+        "comentario": "Buena historia pero muchos bugs.",
+        "puntuacion": 7,
+        "fecha": "2021-01-01T11:00:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core i5-3570K",
+        "ram": "8 GB",
+        "gpu": "NVIDIA GTX 780"
+      }
+    }
+  },
+  {
+    "_id": "000006",
+    "titulo": "Stardew Valley",
+    "genero": ["Simulación", "RPG", "Indie"],
+    "fecha_lanzamiento": "2016-02-26T00:00:00Z",
+    "desarrolladora": "ConcernedApe",
+    "precio": 14.99,
+    "disponible": true,
+    "plataformas": ["PC", "PS4", "Xbox One", "Switch", "Android", "iOS"],
+    "valoracion_media": 9.2,
+    "opiniones": [
+      {
+        "usuario": "farmgirl98",
+        "comentario": "Relajante y muy completo.",
+        "puntuacion": 9,
+        "fecha": "2018-11-12T08:30:00Z"
+      }
+    ],
+    "requisitos_sistema": {
+      "minimos": {
+        "cpu": "Intel Core 2 Duo",
+        "ram": "2 GB",
+        "gpu": "Intel HD Graphics"
+      }
+    }
+  }
+]

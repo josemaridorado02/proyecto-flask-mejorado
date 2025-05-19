@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ juego.titulo }} - Detalle
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="{{ url_for('buscar_juegos') }}" class="back-arrow">⬅ Volver</a>
+    <h2 class="game-title">{{ juego.titulo }}</h2>
+    <div class="game-detail">
+        <p><strong>ID:</strong> {{ juego._id }}</p>
+        <p><strong>Género:</strong> {{ juego.genero | join(', ') }}</p>
+        <p><strong>Fecha de Lanzamiento:</strong> {{ juego.fecha_lanzamiento }}</p>
+        <p><strong>Desarrolladora:</strong> {{ juego.desarrolladora }}</p>
+        <p><strong>Precio:</strong> {{ juego.precio }}€</p>
+        <p><strong>Disponible:</strong> {{ 'Sí' if juego.disponible else 'No' }}</p>
+        <p><strong>Plataformas:</strong> {{ juego.plataformas | join(', ') }}</p>
+        <p><strong>Valoración Media:</strong> {{ juego.valoracion_media }}/10</p>
+        <h3 class="game-subtitle">Opiniones</h3>
+        <ul class="opinion-list">
+            {% for opinion in juego.opiniones %}
+                <li>{{ opinion.usuario }} ({{ opinion.puntuacion }}/10): {{ opinion.comentario }} - {{ opinion.fecha }}</li>
+            {% endfor %}
+        </ul>
+        <h3 class="game-subtitle">Requisitos Mínimos</h3>
+        <p><strong>CPU:</strong> {{ juego.requisitos_sistema.minimos.cpu }}</p>
+        <p><strong>RAM:</strong> {{ juego.requisitos_sistema.minimos.ram }}</p>
+        <p><strong>GPU:</strong> {{ juego.requisitos_sistema.minimos.gpu }}</p>
+    </div>
+</div>
+{% endblock %}

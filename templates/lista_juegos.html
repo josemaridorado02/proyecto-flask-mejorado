@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Lista de Juegos
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="{{ url_for('buscar_juegos') }}" class="back-arrow">⬅ Volver</a>
+    <h2 class="game-title">Lista de Juegos Legendarios</h2>
+    {% if juegos %}
+        <table class="game-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Desarrolladora</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for juego in juegos %}
+                    <tr>
+                        <td>{{ juego.titulo }}</td>
+                        <td>{{ juego.desarrolladora }}</td>
+                        <td><a href="{{ url_for('detalle_juego', id=juego._id) }}" class="detail-link">Detalle</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="no-results">No se encontraron juegos. ¡Sigue explorando!</p>
+    {% endif %}
+</div>
+{% endblock %}
